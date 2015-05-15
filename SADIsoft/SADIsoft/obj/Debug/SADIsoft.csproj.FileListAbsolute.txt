@@ -1,0 +1,12 @@
+c:\users\francisco\documents\visual studio 2013\Projects\SADIsoft\SADIsoft\bin\SADIsoft.dll.config
+c:\users\francisco\documents\visual studio 2013\Projects\SADIsoft\SADIsoft\bin\SADIsoft.dll
+c:\users\francisco\documents\visual studio 2013\Projects\SADIsoft\SADIsoft\bin\SADIsoft.pdb
+c:\users\francisco\documents\visual studio 2013\Projects\SADIsoft\SADIsoft\obj\Debug\SADIsoft.csprojResolveAssemblyReference.cache
+c:\users\francisco\documents\visual studio 2013\Projects\SADIsoft\SADIsoft\obj\Debug\SADIsoft.dll
+c:\users\francisco\documents\visual studio 2013\Projects\SADIsoft\SADIsoft\obj\Debug\SADIsoft.pdb
+C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\bin\SADIsoft.dll.config
+C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\bin\SADIsoft.dll
+C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\bin\SADIsoft.pdb
+C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\obj\Debug\SADIsoft.csprojResolveAssemblyReference.cache
+C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\obj\Debug\SADIsoft.dll
+C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\obj\Debug\SADIsoft.pdb
