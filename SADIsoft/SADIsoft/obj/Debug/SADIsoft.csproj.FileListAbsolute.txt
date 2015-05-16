@@ -10,3 +10,15 @@ C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\bin\SADIsoft.pdb
 C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\obj\Debug\SADIsoft.csprojResolveAssemblyReference.cache
 C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\obj\Debug\SADIsoft.dll
 C:\Users\Nelly\Desktop\SADIsoft\SADIsoft\obj\Debug\SADIsoft.pdb
+C:\Users\Victor Feliz\Google Drive\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.dll.config
+C:\Users\Victor Feliz\Google Drive\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.dll
+C:\Users\Victor Feliz\Google Drive\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.pdb
+C:\Users\Victor Feliz\Google Drive\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.csprojResolveAssemblyReference.cache
+C:\Users\Victor Feliz\Google Drive\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.dll
+C:\Users\Victor Feliz\Google Drive\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.pdb
+C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.dll.config
+C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.dll
+C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.pdb
+C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.csprojResolveAssemblyReference.cache
+C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.dll
+C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.pdb

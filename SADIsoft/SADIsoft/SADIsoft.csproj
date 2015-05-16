@@ -65,12 +65,16 @@
     <Content Include="CambiarContrasena.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="LoginR.aspx" />
+    <Content Include="logo\iconolo.png" />
+    <Content Include="logo\lo.jpg" />
     <Content Include="PropietarioCuenta.aspx" />
     <Content Include="Propietarios.aspx" />
     <Content Include="RegistrarCliente.aspx" />
     <Content Include="RegistrarInmuebles.aspx" />
     <Content Include="RegistrarPropietario.aspx" />
     <Content Include="RegistrarUsuarios.aspx" />
+    <Content Include="stilo\estilos.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -100,6 +104,13 @@
     <Compile Include="DataAccess\ProvinciaDA.cs" />
     <Compile Include="DataAccess\SectorDA.cs" />
     <Compile Include="DataAccess\UsuarioDA.cs" />
+    <Compile Include="LoginR.aspx.cs">
+      <DependentUpon>LoginR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginR.aspx.designer.cs">
+      <DependentUpon>LoginR.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Controller\RegistrarClienteControlador.cs" />
     <Compile Include="Model\Inmueble.cs" />
