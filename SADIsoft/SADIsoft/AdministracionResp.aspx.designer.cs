@@ -11,7 +11,7 @@ namespace SADIsoft
 {
 
 
-    public partial class Default
+    public partial class AdministracionResp
     {
     }
 }

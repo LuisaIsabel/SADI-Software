@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Inicio.Master.cs" Inherits="SADIsoft.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <style type="text/css">
+        h2 {
+            margin: 0;
+            color: #666;
+            padding-top: 90px;
+            font-size: 52px;
+            font-family: "trebuchet ms", sans-serif;
+        }
+
+        .item {
+            background: #333;
+            text-align: center;
+            height: 300px !important;
+        }
+
+        .carousel {
+            margin-top: 20px;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+    
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SADI SOFTWARE</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/inicio/index.aspx" />Inicio <span class="sr-only">(current)</span></a></li>
+                    <%--
+                        <li><a href="/nosotros/Nosotro.aspx">Registrar Propietarios</a></li>
+                        <li><a href="#">Registrar Inmuebles</a></li>
+                        <li><a href="#">Cambiar Contraseña</a></li>
+                        <li><a href="#">Registrar Usuarios</a></li>
+                        <li><a href="#">Cerrar Seccion</a></li>
+                        <%--
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">variado <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li> %>
+                    </ul>
+                    <%--
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </form>--%>
+                    <form class="navbar-form navbar-right" runat="server">
+                        <div class="form-group">
+                            <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-success" PostBackUrl="~/LoginResponse.aspx">Iniciar Seccion</asp:LinkButton>
+                        </div>
+                        
+                    </form>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <div class="bs-example">
+        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <h2></h2>
+                    <div class="carousel-caption">
+                        <img src="/imagenes/imagen1.jpg" class="img-thumbnail" />
+                        <h3>Todo lo que necesitas en un solo lugar</h3>
+                        <p>Los mejores Inmuebles de todo el Pais estan aqui.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h2></h2>
+                    <div class="carousel-caption">
+                        <img src="/imagenes/imagen2.jpg" class="img-thumbnail" />
+                        <h3>La mejor forma de visualizar tus Inmuebles</h3>
+                        <p>Alquila o compra uno de estos inmuebles</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h2></h2>
+                    <div class="carousel-caption">
+                        <img src="/imagenes/imagen3.jpg" class="img-thumbnail" />
+                        <h3>Las mejores ofertas del mercado</h3>
+                        <p>Aqui encontraras todo lo que necesitas.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h2></h2>
+                    <div class="carousel-caption">
+                        <img src="/imagenes/imagen4.jpg" class="img-thumbnail" />
+                        <h3>maximisa tus ingresos de todos tus inmuebles</h3>
+                        <p>Ingresos 100% de ganancia en todos tus ingresos.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h2></h2>
+                    <div class="carousel-caption">
+                        <img src="/imagenes/imagen5.jpg" class="img-thumbnail" />
+                        <h3>Casas con pisinas y mucho mas</h3>
+                        <p>Las mejores casas y apartamento estan a tu alcanse aqui.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Somos la primera empresa en esta area. <span class="text-muted">Todo en un solo lugar.</span></h2>
+          <p class="lead">Atraves del tiempo te daras cuenta que usar SADI es la mejor forma de maximizar sus ingresos ya que tiene un control total de todos sus inmuebles.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4=" data-holder-rendered="true">
+        </div>
+      </div>
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Somos lider en el mercado <span class="text-muted">Esta es tu oportunidad.</span></h2>
+          <p class="lead">Ven unete a unos de nuestro reepresentante y forma parte de la mejor forma de administratar tus inmuebles unete ya mismo, y forma parte de esta gran familia.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4=" data-holder-rendered="true">
+        </div>
+      </div>
+     <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2014 SADI, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+        
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>

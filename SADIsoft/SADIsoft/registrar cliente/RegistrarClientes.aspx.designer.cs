@@ -7,63 +7,81 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SADI {
+namespace SADIsoft.registrar_cliente {
     
     
-    public partial class RegistrarUsuarios {
+    public partial class RegistrarClientes {
         
         /// <summary>
-        /// form1 control.
+        /// txtNombre1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre1;
         
         /// <summary>
-        /// LinkButton1 control.
+        /// txtApellido1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.TextBox txtApellido1;
         
         /// <summary>
-        /// txtEmail control.
+        /// txtCedula1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtCedula1;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// txtDireccion1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.TextBox txtDireccion1;
         
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// txtTelefonos1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.TextBox txtTelefonos1;
         
         /// <summary>
-        /// Button1 control.
+        /// txtTelefonos2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.TextBox txtTelefonos2;
+        
+        /// <summary>
+        /// txtEmail1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmail1;
+        
+        /// <summary>
+        /// btnRegistrarCliente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegistrarCliente;
     }
 }

@@ -10,16 +10,7 @@
 namespace SADIsoft {
     
     
-    public partial class LoginR {
-        
-        /// <summary>
-        /// textUsuarios control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textUsuarios;
+    public partial class LoginCambioResp {
         
         /// <summary>
         /// textContrase control.
@@ -31,12 +22,21 @@ namespace SADIsoft {
         protected global::System.Web.UI.WebControls.TextBox textContrase;
         
         /// <summary>
-        /// btnIniciar control.
+        /// textContrase1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIniciar;
+        protected global::System.Web.UI.WebControls.TextBox textContrase1;
+        
+        /// <summary>
+        /// btnCambioContrase control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCambioContrase;
     }
 }

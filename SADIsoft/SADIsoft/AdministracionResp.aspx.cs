@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SADIsoft
 {
-    public partial class LoginR : System.Web.UI.Page
+    public partial class AdministracionResp : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

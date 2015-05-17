@@ -57,35 +57,41 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Administracion.aspx" />
+    <Content Include="AdministracionResp.aspx" />
     <Content Include="App_Data\PostgradoDB.mdf" />
     <Content Include="App_Data\PostgradoDB_log.ldf">
       <DependentUpon>PostgradoDB.mdf</DependentUpon>
     </Content>
     <Content Include="CambiarContrasena.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="Login.aspx" />
-    <Content Include="LoginR.aspx" />
+    <Content Include="imagenes\imagen1.jpg" />
+    <Content Include="imagenes\imagen2.jpg" />
+    <Content Include="imagenes\imagen3.jpg" />
+    <Content Include="imagenes\imagen4.jpg" />
+    <Content Include="imagenes\imagen5.jpg" />
+    <Content Include="LoginCambioResp.aspx" />
+    <Content Include="LoginResponse.aspx" />
     <Content Include="logo\iconolo.png" />
     <Content Include="logo\lo.jpg" />
     <Content Include="PropietarioCuenta.aspx" />
+    <Content Include="propietarios registrados\PropietariosReg.aspx" />
     <Content Include="Propietarios.aspx" />
-    <Content Include="RegistrarCliente.aspx" />
-    <Content Include="RegistrarInmuebles.aspx" />
-    <Content Include="RegistrarPropietario.aspx" />
-    <Content Include="RegistrarUsuarios.aspx" />
+    <Content Include="registrar cliente\RegistrarClientes.aspx" />
+    <Content Include="registrar inmueble\RegistrarInmuebles.aspx" />
+    <Content Include="registrar propietarios\RegistrarPropietarios.aspx" />
+    <Content Include="registrar usuario\RegistroUsuario.aspx" />
     <Content Include="stilo\estilos.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administracion.aspx.cs">
-      <DependentUpon>Administracion.aspx</DependentUpon>
+    <Compile Include="AdministracionResp.aspx.cs">
+      <DependentUpon>AdministracionResp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administracion.aspx.designer.cs">
-      <DependentUpon>Administracion.aspx</DependentUpon>
+    <Compile Include="AdministracionResp.aspx.designer.cs">
+      <DependentUpon>AdministracionResp.aspx</DependentUpon>
     </Compile>
     <Compile Include="CambiarContrasena.aspx.cs">
       <DependentUpon>CambiarContrasena.aspx</DependentUpon>
@@ -104,12 +110,40 @@
     <Compile Include="DataAccess\ProvinciaDA.cs" />
     <Compile Include="DataAccess\SectorDA.cs" />
     <Compile Include="DataAccess\UsuarioDA.cs" />
-    <Compile Include="LoginR.aspx.cs">
-      <DependentUpon>LoginR.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LoginR.aspx.designer.cs">
-      <DependentUpon>LoginR.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.Master.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.Master.designer.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCambioResp.aspx.cs">
+      <DependentUpon>LoginCambioResp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginCambioResp.aspx.designer.cs">
+      <DependentUpon>LoginCambioResp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginResponse.aspx.cs">
+      <DependentUpon>LoginResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginResponse.aspx.designer.cs">
+      <DependentUpon>LoginResponse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestra.Master.cs">
+      <DependentUpon>Maestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestra.Master.designer.cs">
+      <DependentUpon>Maestra.Master</DependentUpon>
     </Compile>
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Controller\RegistrarClienteControlador.cs" />
@@ -119,20 +153,6 @@
     <Compile Include="Controller\RegistrarInmuebleControlador.cs" />
     <Compile Include="Controller\RegistrarPropietarioControlador.cs" />
     <Compile Include="Controller\RegistrarUsuariosControlador.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Model\Direccion.cs" />
     <Compile Include="Model\Municipio.cs" />
     <Compile Include="Model\Propietario.cs" />
@@ -147,6 +167,13 @@
     <Compile Include="PropietarioCuenta.aspx.designer.cs">
       <DependentUpon>PropietarioCuenta.aspx</DependentUpon>
     </Compile>
+    <Compile Include="propietarios registrados\PropietariosReg.aspx.cs">
+      <DependentUpon>PropietariosReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="propietarios registrados\PropietariosReg.aspx.designer.cs">
+      <DependentUpon>PropietariosReg.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Propietarios.aspx.cs">
       <DependentUpon>Propietarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -154,42 +181,47 @@
     <Compile Include="Propietarios.aspx.designer.cs">
       <DependentUpon>Propietarios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarCliente.aspx.cs">
-      <DependentUpon>RegistrarCliente.aspx</DependentUpon>
+    <Compile Include="registrar cliente\RegistrarClientes.aspx.cs">
+      <DependentUpon>RegistrarClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegistrarCliente.aspx.designer.cs">
-      <DependentUpon>RegistrarCliente.aspx</DependentUpon>
+    <Compile Include="registrar cliente\RegistrarClientes.aspx.designer.cs">
+      <DependentUpon>RegistrarClientes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarInmuebles.aspx.cs">
+    <Compile Include="registrar inmueble\RegistrarInmuebles.aspx.cs">
       <DependentUpon>RegistrarInmuebles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegistrarInmuebles.aspx.designer.cs">
+    <Compile Include="registrar inmueble\RegistrarInmuebles.aspx.designer.cs">
       <DependentUpon>RegistrarInmuebles.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarPropietario.aspx.cs">
-      <DependentUpon>RegistrarPropietario.aspx</DependentUpon>
+    <Compile Include="registrar propietarios\RegistrarPropietarios.aspx.cs">
+      <DependentUpon>RegistrarPropietarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegistrarPropietario.aspx.designer.cs">
-      <DependentUpon>RegistrarPropietario.aspx</DependentUpon>
+    <Compile Include="registrar propietarios\RegistrarPropietarios.aspx.designer.cs">
+      <DependentUpon>RegistrarPropietarios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarUsuarios.aspx.cs">
-      <DependentUpon>RegistrarUsuarios.aspx</DependentUpon>
+    <Compile Include="registrar usuario\RegistroUsuario.aspx.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegistrarUsuarios.aspx.designer.cs">
-      <DependentUpon>RegistrarUsuarios.aspx</DependentUpon>
+    <Compile Include="registrar usuario\RegistroUsuario.aspx.designer.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Maestra.Master" />
+    <Content Include="Inicio.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="prueba\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

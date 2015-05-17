@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginR.aspx.cs" Inherits="SADIsoft.LoginR" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginCambioResp.aspx.cs" Inherits="SADIsoft.LoginCambioResp" %>
 
 <!DOCTYPE html>
 
@@ -22,15 +22,15 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-4 col-md-offset-4">
-                <h1 class="text-center login-title">Iniciar Seccion en SADI</h1>
+                <h1 class="text-center login-title">Cambio de contraseña</h1>
                 <div class="account-wall">
                     <img class="profile-img" src="logo/lo.jpg"
                         alt=""/>
                     <form class="form-signin" runat="server">
-                        <asp:TextBox ID="textUsuarios" runat="server" type="text" class="form-control" placeholder="Email" required autofocus ></asp:TextBox>
-                        <asp:TextBox ID="textContrase" runat="server" type="password" class="form-control" placeholder="Password" required ></asp:TextBox>
-                        <asp:Button ID="btnIniciar" runat="server" class="btn btn-lg btn-primary btn-block" Text
-                            ="Iniciar Seccion"/>
+                        <asp:TextBox ID="textContrase" runat="server" type="password" class="form-control" placeholder="Nueva Contraseña" required autofocus ></asp:TextBox>
+                        <asp:TextBox ID="textContrase1" runat="server" type="password" class="form-control" placeholder="Repetir Contraseña" required ></asp:TextBox>
+                        <asp:Button ID="btnCambioContrase" runat="server" class="btn btn-lg btn-primary btn-block" Text
+                            ="Cambio Contraseña" OnClick="btnCambioContrase_Click"/>
                         <label class="checkbox pull-left">
                             <input type="checkbox" value="remember-me"/>
                                 Recordar Contraseña
@@ -38,10 +38,9 @@
                         <a href="#" class="pull-right need-help">SADI </a><span class="clearfix"></span>
                     </form>
                 </div>
-                <a href="#" class="text-center new-account">Create an account </a>
+                
             </div>
         </div>
-    </div>
+    </div>  
 </body>
 </html>
-

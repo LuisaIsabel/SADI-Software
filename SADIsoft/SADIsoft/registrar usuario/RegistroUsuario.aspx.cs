@@ -6,20 +6,20 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SADI
+namespace SADIsoft.registrar_usuario
 {
-    public partial class RegistrarUsuarios : System.Web.UI.Page
+    public partial class RegistroUsuario : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
             try
             {
-                string email = txtEmail.Text;
+                string email = txtEmail1.Text;
 
                 if (RegistrarUsuariosControlador.RegistrarUsuario(email))
                 {
@@ -34,13 +34,7 @@ namespace SADI
             {
                 throw ex;
             }
-        }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-            Session.Abandon();
-            Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
-            Response.Redirect("Default.aspx");
         }
     }
 }
