@@ -115,7 +115,7 @@ namespace SADIsoft.registrar_propietarios
                         sectorId, calle, numero, telefono1, telefono2, email);
                     
                     Response.Write("Propietario registrado con exito");
-                    Response.Redirect("/LoginResponse.aspx");
+                    Response.Redirect("/propietarios registrados/PropietariosReg.aspx");
                 }
                 else
                 {

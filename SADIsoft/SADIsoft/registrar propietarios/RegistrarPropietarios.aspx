@@ -106,7 +106,7 @@
                 <label class="col-md-4 control-label" for="textCalle">Email</label>
                 <div class="col-md-4">
                     <asp:TextBox ID="txtEmail1P" runat="server" type="text" class="form-control input-md" placeholder="Email" required ></asp:TextBox>
-                   
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" class="col-md-4 control-label" ControlToValidate="txtEmail1P" ErrorMessage="correo invalido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </div>
             </div>
 
@@ -121,6 +121,7 @@
 
 
         </fieldset>
+        
     </form>
 
 
