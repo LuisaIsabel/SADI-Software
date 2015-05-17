@@ -22,3 +22,9 @@ C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.pdb
 C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.csprojResolveAssemblyReference.cache
 C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.dll
 C:\Users\Victor Feliz\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.pdb
+C:\Users\Francisco\Desktop\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.dll.config
+C:\Users\Francisco\Desktop\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.dll
+C:\Users\Francisco\Desktop\SADI-Software\SADIsoft\SADIsoft\bin\SADIsoft.pdb
+C:\Users\Francisco\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.dll
+C:\Users\Francisco\Desktop\SADI-Software\SADIsoft\SADIsoft\obj\Debug\SADIsoft.pdb
