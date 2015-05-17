@@ -65,7 +65,7 @@
                         <li class="active"><a href="/inicio/index.aspx"/>Inicio <span class="sr-only">(current)</span></a></li>
                         <li><a href="/registrar propietarios/RegistrarPropietarios.aspx">Registrar Propietarios</a></li>
                         <li><a href="/registrar inmueble/RegistrarInmuebles.aspx">Registrar Inmuebles</a></li>
-                        <li><a href="LoginCambioResp.aspx">Cambiar Contraseña</a></li>
+                        <li><a href="/LoginCambioResp.aspx">Cambiar Contraseña</a></li>
                         <li><a href="/registrar cliente/RegistrarClientes.aspx">Registrar Clientes</a></li>
                         <li><a href="/registrar usuario/RegistroUsuario.aspx">Usuario</a></li>
                         <%--
