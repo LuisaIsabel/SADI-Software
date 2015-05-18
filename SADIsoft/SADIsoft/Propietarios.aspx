@@ -76,7 +76,14 @@ LEFT JOIN Usuarios AS U ON p.UsuarioId = U.UsuarioId
 INNER JOIN Direcciones AS D ON P.DireccionId = D.DireccionId 
 INNER JOIN Provincias AS Pr ON D.ProvinciaId = Pr.ProvinciaId
 INNER JOIN Municipios AS M ON D.MunicipioId = M.MunicipioId
-INNER JOIN Sectores AS S ON D.SectorId = S.SectorId"></asp:SqlDataSource>
+INNER JOIN Sectores AS S ON D.SectorId = S.SectorId" UpdateCommand="USP_Actualizar_Propietario" UpdateCommandType="StoredProcedure">
+            <UpdateParameters>
+                <asp:Parameter Name="PropietarioID" Type="Int32" />
+                <asp:Parameter Name="Tel1" Type="String" />
+                <asp:Parameter Name="Tel2" Type="String" />
+                <asp:Parameter Name="Email" Type="String" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" PostBackUrl="~/ResgistrarPropietario.aspx" style="text-align: center" Text="Volver a la pagina de Registro de Propietarios" UseSubmitBehavior="False" />
 &nbsp;</div>

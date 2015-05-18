@@ -41,7 +41,11 @@ namespace SADIsoft.DataAccess
                 com.Parameters.Add("@MunicipioId", SqlDbType.Int).Value = prop.Direccion.Municipio;
                 com.Parameters.Add("@ProvinciaId", SqlDbType.Int).Value = prop.Direccion.Provincia;
 
-                int usuarioId = Convert.ToInt32(com.ExecuteScalar());
+                int usuarioId = 0;
+                var usId = com.ExecuteScalar();
+
+                if (!(usId is DBNull))
+                    usuarioId = Convert.ToInt32(com.ExecuteScalar());
 
                 if (prop.Email != "")
                 {

@@ -11,7 +11,7 @@ namespace SADIsoft.Controller
     public static class RegistrarInmuebleControlador
     {
 
-        public static void RegistrarInmueble(int propietarioId, int provinciaId, int municipioId, int sectorId, string calle, 
+        public static int RegistrarInmueble(int propietarioId, int provinciaId, int municipioId, int sectorId, string calle, 
             string numero, bool tipo, decimal precioAlquiler, int depositos, decimal precioVenta, int niveles, 
             bool tipoInmueble, bool sotano, bool piscina, bool marquesina, int capacidad, string comentarios, string foto1, 
             string foto2, string foto3, string foto4, int habitaciones, int banos)
@@ -23,7 +23,8 @@ namespace SADIsoft.Controller
                 Inmueble inmueble = new Inmueble(propietarioId, direccion, tipo, precioAlquiler, depositos,
                     precioVenta, niveles, tipoInmueble, sotano, piscina, marquesina, capacidad, comentarios, foto1, foto2, foto3, foto4, habitaciones, banos);
 
-                InmuebleDA.RegistrarInmuebleDB(inmueble);
+                int id = InmuebleDA.RegistrarInmuebleDB(inmueble);
+                return id;
             }
             catch(Exception ex)
             {

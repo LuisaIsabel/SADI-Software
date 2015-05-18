@@ -96,7 +96,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textCalle">Telefono 2</label>
                 <div class="col-md-4">
-                    <asp:TextBox ID="txtTelefonos2P" runat="server" type="text" class="form-control input-md" placeholder="Telefono Opcional" required ></asp:TextBox>
+                    <asp:TextBox ID="txtTelefonos2P" runat="server" type="text" class="form-control input-md" placeholder="Telefono Opcional" ></asp:TextBox>
                    
                 </div>
             </div>
@@ -105,7 +105,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textCalle">Email</label>
                 <div class="col-md-4">
-                    <asp:TextBox ID="txtEmail1P" runat="server" type="text" class="form-control input-md" placeholder="Email" required ></asp:TextBox>
+                    <asp:TextBox ID="txtEmail1P" runat="server" type="text" class="form-control input-md" placeholder="Email" ></asp:TextBox>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" class="col-md-4 control-label" ControlToValidate="txtEmail1P" ErrorMessage="correo invalido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </div>
             </div>

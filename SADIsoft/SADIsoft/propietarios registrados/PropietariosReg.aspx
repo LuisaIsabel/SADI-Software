@@ -11,7 +11,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textTele">Telefono 1</label>
                 <div class="col-md-4">
-                    <asp:TextBox ID="txtTelefonops1" runat="server" type="text" class="form-control input-md" placeholder="Telefono" required ></asp:TextBox>
+                    <asp:TextBox ID="txtTelefonops1" runat="server" type="text" class="form-control input-md" placeholder="Telefono" ></asp:TextBox>
                    
                 </div>
             </div>
@@ -20,7 +20,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textTelefono2">Telefono 2</label>
                 <div class="col-md-4">
-                    <asp:TextBox ID="txtTelefonos2" runat="server" type="text" class="form-control input-md" placeholder="Email" required ></asp:TextBox>
+                    <asp:TextBox ID="txtTelefonos2" runat="server" type="text" class="form-control input-md" placeholder="Email" ></asp:TextBox>
                    
                 </div>
             </div>
@@ -29,7 +29,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textEmail">Email</label>
                 <div class="col-md-4">
-                    <asp:TextBox ID="TextEmail" runat="server" type="text" class="form-control input-md" placeholder="Email" required ></asp:TextBox>
+                    <asp:TextBox ID="TextEmail" runat="server" type="text" class="form-control input-md" placeholder="Email"></asp:TextBox>
                    
                 </div>
             </div>
@@ -98,7 +98,14 @@ LEFT JOIN Usuarios AS U ON p.UsuarioId = U.UsuarioId
 INNER JOIN Direcciones AS D ON P.DireccionId = D.DireccionId 
 INNER JOIN Provincias AS Pr ON D.ProvinciaId = Pr.ProvinciaId
 INNER JOIN Municipios AS M ON D.MunicipioId = M.MunicipioId
-INNER JOIN Sectores AS S ON D.SectorId = S.SectorId"></asp:SqlDataSource>
+INNER JOIN Sectores AS S ON D.SectorId = S.SectorId" UpdateCommand="USP_Actualizar_Propietario" UpdateCommandType="StoredProcedure">
+                    <UpdateParameters>
+                        <asp:Parameter Name="PropietarioID" Type="Int32" />
+                        <asp:Parameter Name="Tel1" Type="String" />
+                        <asp:Parameter Name="Tel2" Type="String" />
+                        <asp:Parameter Name="Email" Type="String" />
+                    </UpdateParameters>
+                </asp:SqlDataSource>
 
             </div>
 

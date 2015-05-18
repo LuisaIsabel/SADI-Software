@@ -18,7 +18,7 @@ namespace SADIsoft.DataAccess
         //---------------------------------------------------
         // Inserta un Inmueble en la Base de Datos
         //---------------------------------------------------
-        internal static void RegistrarInmuebleDB(Inmueble inm)
+        internal static int RegistrarInmuebleDB(Inmueble inm)
         {
 
             try
@@ -53,9 +53,11 @@ namespace SADIsoft.DataAccess
                 com.Parameters.Add("@Habitaciones", SqlDbType.Int).Value = inm.Habitaciones;
                 com.Parameters.Add("@Banos", SqlDbType.Int).Value = inm.Banos;
 
-                com.ExecuteNonQuery();
+                int inmuebleId = Convert.ToInt32(com.ExecuteScalar());
 
                 conn.Close();
+                return inmuebleId;
+
             }
             catch (Exception ex)
             {

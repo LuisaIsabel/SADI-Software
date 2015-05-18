@@ -108,19 +108,19 @@ namespace SADIsoft.registrar_propietarios
 
             try
             {
-                if (Validacion.ValidarCedula(cedula, false))
-                {
+                //if (Validacion.ValidarCedula(cedula, false))
+                //{
 
                     RegistrarPropietarioControlador.RegistrarPropietario(nombre, apellido, cedula, provinciaId, municipioId,
                         sectorId, calle, numero, telefono1, telefono2, email);
                     
                     Response.Write("Propietario registrado con exito");
                     Response.Redirect("/propietarios registrados/PropietariosReg.aspx");
-                }
-                else
-                {
-                    Label1.Visible = true;
-                }
+               // }
+               // else
+               // {
+               //     Label1.Visible = true;
+              //  }
 
             }
             catch (Exception ex)

@@ -142,25 +142,18 @@ namespace SADIsoft.registrar_inmueble
             bool sotano = cbSotano1.Checked;
             bool piscina = cbPiscina1.Checked;
             bool marquesina = cbMarquesina1.Checked;
-            int capacidad = Convert.ToInt32(ddlCapacidadMarquesina1.Text);
+            int capacidad = 0;
+            if (ddlCapacidadMarquesina1.SelectedIndex != -1)
+            {
+                capacidad = ddlCapacidadMarquesina1.SelectedIndex;
+            }
             int habitaciones = Convert.ToInt32(ddlHabitaciones1.Text);
             int banos = Convert.ToInt32(ddlBanos1.Text);
 
-            string foto1 = Server.MapPath(string.Format(@"~\" + @"{0}\", propietarioId.ToString()));
-            Directory.CreateDirectory(foto1);
-            FileUpload1.SaveAs(foto1 += propietarioId.ToString() + "1.jpg");
-
-            string foto2 = Server.MapPath(string.Format(@"~\" + @"{0}\", propietarioId.ToString()));
-            Directory.CreateDirectory(foto2);
-            FileUpload2.SaveAs(foto2 += propietarioId.ToString() + "2.jpg");
-
-            string foto3 = Server.MapPath(string.Format(@"~\" + @"{0}\", propietarioId.ToString()));
-            Directory.CreateDirectory(foto3);
-            FileUpload3.SaveAs(foto3 += propietarioId.ToString() + "3.jpg");
-
-            string foto4 = Server.MapPath(string.Format(@"~\" + @"{0}\", propietarioId.ToString()));
-            Directory.CreateDirectory(foto4);
-            FileUpload4.SaveAs(foto4 += propietarioId.ToString() + "4.jpg");
+            string nombreFoto1 = propietarioId.ToString() + "-1.jpg";
+            string nombreFoto2 = propietarioId.ToString() + "-2.jpg";
+            string nombreFoto3 = propietarioId.ToString() + "-3.jpg";
+            string nombreFoto4 = propietarioId.ToString() + "-4.jpg";
 
             string comentarios = txtComentarios1.Text;
 
@@ -169,19 +162,34 @@ namespace SADIsoft.registrar_inmueble
 
             try
             {
-                RegistrarInmuebleControlador.RegistrarInmueble(propietarioId, provinciaId, municipioId, sectorId, calle, numero,
+                int inmuebleId = RegistrarInmuebleControlador.RegistrarInmueble(propietarioId, provinciaId, municipioId, sectorId, calle, numero,
                     tipo, precioAlquiler, depositos, precioVenta, niveles, tipoInmueble, sotano, piscina, marquesina, capacidad, comentarios,
-                    foto1, foto2, foto3, foto4, habitaciones, banos);
+                    nombreFoto1, nombreFoto2, nombreFoto3, nombreFoto4, habitaciones, banos);
+
+                string foto1 = Server.MapPath(string.Format(@"~\" + @"\Images\{0}-{1}\", propietarioId.ToString(), inmuebleId.ToString()));
+                Directory.CreateDirectory(foto1);
+                FileUpload1.SaveAs(foto1 += nombreFoto1);
+
+                string foto2 = Server.MapPath(string.Format(@"~\" + @"\Images\{0}-{1}\", propietarioId.ToString(), inmuebleId.ToString()));
+                Directory.CreateDirectory(foto2);
+                FileUpload2.SaveAs(foto2 += nombreFoto2);
+
+                string foto3 = Server.MapPath(string.Format(@"~\" + @"\Images\{0}-{1}\", propietarioId.ToString(), inmuebleId.ToString()));
+                Directory.CreateDirectory(foto3);
+                FileUpload3.SaveAs(foto3 += nombreFoto3);
+
+                string foto4 = Server.MapPath(string.Format(@"~\" + @"\Images\{0}-{1}\", propietarioId.ToString(), inmuebleId.ToString()));
+                Directory.CreateDirectory(foto4);
+                FileUpload4.SaveAs(foto4 += nombreFoto4);
+
+                Response.Redirect("Administracion.aspx");
             }
             catch (Exception ex)
             {
                 Response.Write(ex);
             }
 
-            Response.Write(propietarioId + " " + provinciaId + " " + municipioId + " " + sectorId + " " +
-                calle + " " + numero + " " + tipo + " " + precioAlquiler + " " + depositos + " " + precioVenta + " " + niveles
-                + " " + sotano + " " + piscina + " " + marquesina + " " + foto1 + " " + foto2 + " " + foto3 + " " + foto4 + " " + tipoInmueble);
-
+            
         }
 
         protected void ddlMunicipio1_SelectedIndexChanged(object sender, EventArgs e)
