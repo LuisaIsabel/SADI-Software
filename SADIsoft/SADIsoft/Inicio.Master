@@ -60,6 +60,7 @@
                 </button>
                 <a class="navbar-brand" href="#">SADI SOFTWARE</a>
             </div>
+
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="/inicio/index.aspx" />Inicio <span class="sr-only">(current)</span></a></li>
@@ -93,11 +94,11 @@
                         </div>
                         <button type="submit" class="btn btn-success">Sign in</button>
                     </form>--%>
-                    <form class="navbar-form navbar-right" runat="server">
+                    <form class="navbar-form navbar-right" method="get" action="/LoginResponse.aspx">
                         <div class="form-group">
-                            <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-success" PostBackUrl="~/LoginResponse.aspx">Iniciar Seccion</asp:LinkButton>
+                            <button id="btnHtmlIniciar" class="btn btn-success">Iniciar Seccion</button>
                         </div>
-                        
+
                     </form>
             </div>
             <!--/.navbar-collapse -->
@@ -169,13 +170,73 @@
     <hr class="featurette-divider">
     <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Somos la primera empresa en esta area. <span class="text-muted">Todo en un solo lugar.</span></h2>
-          <p class="lead">Atraves del tiempo te daras cuenta que usar SADI es la mejor forma de maximizar sus ingresos ya que tiene un control total de todos sus inmuebles.</p>
+            <h2 class="featurette-heading">Somos la primera empresa en esta area. <span class="text-muted">Todo en un solo lugar.</span></h2>
+            <p class="lead">Atraves del tiempo te daras cuenta que usar SADI es la mejor forma de maximizar sus ingresos ya que tiene un control total de todos sus inmuebles.</p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4=" data-holder-rendered="true">
-        </div>
-      </div>
+   
+        <!-- Buscardor-->
+        <form runat="server">
+            <div class="col-md-5">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>Buscar Inmuebles</legend>
+
+                </fieldset>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textNiveles">Tipo Imueble</label>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="ddlNiveles1" runat="server" class="form-control">
+                            <asp:ListItem>-Seleccione-</asp:ListItem>
+                            <asp:ListItem>Caja</asp:ListItem>
+                            <asp:ListItem>Apartamento</asp:ListItem>
+                            <asp:ListItem>Solar</asp:ListItem>
+                            <asp:ListItem>Local</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="col-md-5">
+                <div class="form-group">
+                    <br />
+                    <label class="col-md-4 control-label" for="textNiveles">Accion</label>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="DropDownList1" runat="server" class="form-control">
+                            <asp:ListItem>-Seleccione-</asp:ListItem>
+                            <asp:ListItem>Caja</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="col-md-5">
+                <div class="form-group">
+                     <br />
+                    <label class="col-md-4 control-label" for="textNiveles">Direccion</label>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="DropDownList2" runat="server" class="form-control">
+                            <asp:ListItem>-Seleccione-</asp:ListItem>
+                            <asp:ListItem>Villlas Agricolas</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="col-md-5">
+                <div class="form-group">
+                     <br />
+                    <div class="col-md-4">
+                        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" class="btn btn-success" />
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
     <!-- START THE FEATURETTES -->
     <hr class="featurette-divider">
     <div class="row featurette">
@@ -184,7 +245,7 @@
           <p class="lead">Ven unete a unos de nuestro reepresentante y forma parte de la mejor forma de administratar tus inmuebles unete ya mismo, y forma parte de esta gran familia.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4=" data-holder-rendered="true">
+            <img class="featurette-image img-responsive center-block" src="/imagenes/edi.jpg" />
         </div>
       </div>
      <!-- START THE FEATURETTES -->
