@@ -63,6 +63,7 @@
       <DependentUpon>PostgradoDB.mdf</DependentUpon>
     </Content>
     <Content Include="CambiarContrasena.aspx" />
+    <Content Include="ContratoLitis.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="imagenes\imagen1.jpg" />
     <Content Include="imagenes\imagen2.jpg" />
@@ -101,6 +102,13 @@
       <DependentUpon>CambiarContrasena.aspx</DependentUpon>
     </Compile>
     <Compile Include="Code\Validacion.cs" />
+    <Compile Include="ContratoLitis.aspx.cs">
+      <DependentUpon>ContratoLitis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContratoLitis.aspx.designer.cs">
+      <DependentUpon>ContratoLitis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataAccess\ClienteDA.cs" />
     <Compile Include="DataAccess\Conexion.cs" />
     <Compile Include="DataAccess\DireccionDA.cs" />
