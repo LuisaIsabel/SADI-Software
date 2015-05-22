@@ -182,7 +182,7 @@ namespace SADIsoft.registrar_inmueble
                 Directory.CreateDirectory(foto4);
                 FileUpload4.SaveAs(foto4 += nombreFoto4);
 
-                Response.Redirect("Administracion.aspx");
+                Response.Redirect("AdministracionResp.aspx");
             }
             catch (Exception ex)
             {

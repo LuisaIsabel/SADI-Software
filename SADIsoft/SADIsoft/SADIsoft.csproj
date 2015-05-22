@@ -65,11 +65,20 @@
     <Content Include="CambiarContrasena.aspx" />
     <Content Include="ContratoLitis.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="imagenes\edi.jpg" />
     <Content Include="imagenes\imagen1.jpg" />
     <Content Include="imagenes\imagen2.jpg" />
     <Content Include="imagenes\imagen3.jpg" />
     <Content Include="imagenes\imagen4.jpg" />
     <Content Include="imagenes\imagen5.jpg" />
+    <Content Include="Images\1079-4\1079-1.jpg" />
+    <Content Include="Images\1079-4\1079-2.jpg" />
+    <Content Include="Images\1079-4\1079-3.jpg" />
+    <Content Include="Images\1079-4\1079-4.jpg" />
+    <Content Include="Images\1088-5\1088-1.jpg" />
+    <Content Include="Images\1088-5\1088-2.jpg" />
+    <Content Include="Images\1088-5\1088-3.jpg" />
+    <Content Include="Images\1088-5\1088-4.jpg" />
     <Content Include="LoginCambioResp.aspx" />
     <Content Include="LoginResponse.aspx" />
     <Content Include="logo\iconolo.png" />
@@ -77,6 +86,8 @@
     <Content Include="PropietarioCuenta.aspx" />
     <Content Include="propietarios registrados\PropietariosReg.aspx" />
     <Content Include="Propietarios.aspx" />
+    <Content Include="prueba\PRUEBA.aspx" />
+    <Content Include="prueba\WebForm1.aspx" />
     <Content Include="registrar cliente\RegistrarClientes.aspx" />
     <Content Include="registrar inmueble\RegistrarInmuebles.aspx" />
     <Content Include="registrar propietarios\RegistrarPropietarios.aspx" />
@@ -189,6 +200,20 @@
     <Compile Include="Propietarios.aspx.designer.cs">
       <DependentUpon>Propietarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="prueba\PRUEBA.aspx.cs">
+      <DependentUpon>PRUEBA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prueba\PRUEBA.aspx.designer.cs">
+      <DependentUpon>PRUEBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="prueba\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prueba\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="registrar cliente\RegistrarClientes.aspx.cs">
       <DependentUpon>RegistrarClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -228,9 +253,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="prueba\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -45,7 +45,7 @@ namespace SADIsoft.DataAccess
                 var usId = com.ExecuteScalar();
 
                 if (!(usId is DBNull))
-                    usuarioId = Convert.ToInt32(com.ExecuteScalar());
+                    usuarioId = Convert.ToInt32(usId);
 
                 if (prop.Email != "")
                 {
